@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hi there!</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: white;
+        color: black;
+        text-align: center;
+      }
+      .container {
+        display: table;
+        margin: 0 auto;
+        width: 80%;
+      }
+      .column {
+        display: table-cell;
+        vertical-align: top;
+        padding: 20px;
+      }
+      .image-holder {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        /* margin: 20px auto; */
+      }
+      .content {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+      }
+      .section {
+        margin-top: 30px;
+      }
+      h1,
+      h2 {
+        margin: 0;
+      }
+      hr {
+        border: 1px solid black;
+        /* width: 80%; */
+      }
+      .map {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        background-color: lightgrey;
+        margin: 20px auto;
+      }
+
+      .flashing-container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 10px;
+        border: 2px solid black;
+        background-color: lightgray;
+        font-size: 20px;
+        text-align: center;
+      }
+      .flashing-text {
+        display: inline-block;
+        padding: 10px;
+        background-color: yellow;
+        color: black;
+        animation: flash 1s step-start infinite;
+      }
+      @keyframes flash {
+        0% {
+          background-color: yellow;
+          color: black;
+        }
+        50% {
+          background-color: transparent;
+          color: black;
+        }
+        100% {
+          background-color: yellow;
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <div class="flashing-container">
+          <div id="flashingText" class="flashing-text">
+            Welcome to my retro style profile!
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h1>Anand Dsouza</h1>
+          <h2><em>Software Engineer</em></h2>
+          <br />
+          <div class="image-holder">
+            <!-- Placeholder for the image -->
+            <img
+              src="https://media.licdn.com/dms/image/D5603AQGPqF7806-lSw/profile-displayphoto-shrink_400_400/0/1711314908543?e=1727913600&amp;v=beta&amp;t=YhFKF9_g9K5R5ZuGD3oDAxGrffI8aVir6LQNygs8I7Q"
+              alt="Personal Image"
+              width="200"
+              height="200"
+            />
+          </div>
+          <p>
+            Hello! I'm Anand Dsouza, a software engineer who loves working with
+            great minds. I am all because of the great things people have
+            accomplished before my time. I do my best to put them together.
+          </p>
+          <hr />
+          <div class="section">
+            <h3><u>Work Experience</u></h3>
+            <p>
+              <strong>Senior Product Developer</strong> - Epicor (2020 - 2023)
+            </p>
+            <p>
+              <strong>Professional Programmer Analyst II</strong> - DXC
+              Technology (2015 - 2020)
+            </p>
+            <p><strong>Engineer</strong> - Tech Mahindra (2012 - 2015)</p>
+          </div>
+          <hr />
+          <div class="section">
+            <h3><u>Skills</u></h3>
+            <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Web Design</li>
+                    <li>Java J2EE</li>
+                    <li>TypeScript</li>
+                    <li>Node.js</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Backend Frameworks (Spring, Nest.js)</li>
+                    <li>RESTful Web services</li>
+                    <li>Databases (PostgreSQL, MongoDB)</li>
+                    <li>UI frameworks (Angular, React)</li>
+                    <li>Cloud (AWS, Azure)</li>
+                    <li>CI/CD (GitHub Actions)</li>
+                    <li>Agile</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <hr />
+
+          <div class="section">
+            <h3><u>Languages</u></h3>
+            <ul>
+              <li>English</li>
+              <li>German</li>
+            </ul>
+          </div>
+          <hr />
+          <div class="section">
+            <h3><u>Contact</u></h3>
+            <p>
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/anand-dsouza"
+                >linkedin.com/in/anand-dsouza</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h3>Location</h3>
+        <div class="map">
+          <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.56659729555!2d77.46612869402408!3d12.954280232539016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1722844489167!5m2!1sen!2sin"
+            width="300"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe> -->
+
+          <iframe
+            width="298"
+            height="298"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=77.22496032714845%2C12.71804683823392%2C77.84843444824219%2C13.258659814691377&amp;layer=mapnik"
+            style="border: 1px solid black"
+          ></iframe
+          ><br /><small
+            ><a href="https://www.openstreetmap.org/#map=11/12.9885/77.5367"
+              >View Larger Map</a
+            ></small
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
